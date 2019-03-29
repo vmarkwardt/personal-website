@@ -12,12 +12,12 @@
   <body>
 
 
+    <a href="#test" alt="test">Test</a>
     <main class="container p-3">
-      <!-- flexen und eins an den Anfang und die anderen ans ende align-self-end geht nicht und auch nicht space-between? -->
-      <!-- offset col -->
       <header class="row mb-5 d-flex flex-sm-column flex-md-row
         col12 justify-content-md-between">
-        <h1 class="h3 text-monospace align-self-start p-2 text-center">Vanessa
+        <h1 class="h3 text-monospace align-self-start p-2 text-center
+          text-info">Vanessa
           Markwardt</h1>
         <nav class="mb-3 align-self-end">
           <a href="#contact" class="btn btn-secondary text-uppercase m-2">Kontakt</a>
@@ -25,24 +25,27 @@
         </nav>
       </header>
 
+      <!-- todo häh -->
+
       <section id="stage" class="row m-md-1">
         <div class="portrait col-sm-12 col-md-4 jumbotron-fluid">
           <img src="img/Vanessa.jpg" alt="Portrait-Foto" class="img-fluid
             rounded
             img-thumbnail">
-          <p class="text-black-50 d-block text-center">Vanessa Markwardt</p>
+          <p class="text-black-50 d-block text-center">Vanessa
+            Markwardt</p>
         </div>
 
         <div class="skills col mb-5">
           <div class="mb-4">
-            <h2>Webdevelopment Front End</h2>
+            <h2 class="text-info text-monospace">Webdevelopment Front End</h2>
             <span class="badge badge-light shadow-sm">Html</span>
             <span class="badge badge-light shadow-sm">CSS</span>
             <span class="badge badge-light shadow-sm">JavaScript</span>
             <span class="badge badge-light shadow-sm">Bootstrap</span>
           </div>
           <div class="mb-2">
-            <h2>andere Erfahrung</h2>
+            <h2 class="text-info text-monospace">andere Erfahrung</h2>
             <span class="badge badge-light shadow-sm">MS Access</span>
             <span class="badge badge-light shadow-sm">SQL</span>
             <span class="badge badge-light shadow-sm">Navision</span>
@@ -51,18 +54,17 @@
       </section>
 
       <section class="row jumbotron
-        text-monospace m-1 mb-5"
+        text-monospace m-1 mb-5 shadow"
         id="contact">
-        <!-- <section class="row d-flex justify-content-between flex-wrap jumbotron
-        text-monospace mb-5"
-        id="contact"> -->
-        <p class="p-1 col-sm-12 col-md-1">mobil:</p>
-        <p class="p-1 col-sm-12 col-md-5">0151 68..</p>
-        <p class="p-1 col-sm-12 col-md-1">email:</p>
-        <p class="p-1 col-sm-12 col-md-5">vmarkw....@web.de</p>
+        <p class="col-sm-12 col-md-1 text">mobil: </p>
+        <p class="col-sm-12 col-md-5"> 0151 68..</p>
+        <p class="col-sm-12 col-md-1">email: </p>
+        <p class="col-sm-12 col-md-5"> vmarkw....@web.de</p>
       </section>
 
-      <section class="row d-flex flex-sm-column flex-md-row mb-5"
+      <section class="row d-flex flex-sm-column flex-md-row flex-md-nowrap
+        justify-content-md-between
+        mb-5"
         id="links">
         <div class="teaser img-thumbnail">
           <a href="https://github.com/vmarkwardt" class=""><img
@@ -91,18 +93,18 @@
         m-1"
         id="bio">
         <section class="mb-5 d-flex flex-sm-column flex-md-row flex-sm-start
-          flex-md-wrap"
+          flex-md-wrap col-sm-12 col-md-6"
           id="about me">
           <!-- todo umbruch in md erst nach Zitat? -->
           <div>
-            <h2 class="h2">über mich</h2>
+            <h2 class="h2 text-info text-monospace">über mich</h2>
             <p class="">Für Computer und Programmierung begeistere ich
               mich schon seit
               der
               Schulzeit. Mit Freude erarbeite ich im Team Konzepte und Lösungen,
               um diese dann auch umzusetzen und damit Prozesse zu unterstützen.</p>
             <aside class="align-self-center m-3 text-secondary bg-light round
-              p-2">
+              p-2 mt-2 mb-2">
               <p class="font-italic" lang="de">"Da kann man 'was draus machen."</p>
               <cite class="blockquote-footer">Lieblingsspruch</cite>
             </aside>
@@ -115,8 +117,9 @@
           </div>
         </section>
 
-        <section class="d-flex flex-column text-monospace" id="cv">
-          <h3>Lebenslauf</h3>
+        <section class="d-flex flex-column text-monospace col-sm-12 col-md-6"
+          id="cv">
+          <h2 class="text-info text-monospace mb-2">Lebenslauf</h2>
           <table class="table table-striped">
             <thead>
               <tr>
@@ -155,7 +158,7 @@
                 <td>2008 - 2018</td>
                 <td>2 Kinder / Still- und Trageberatung, Vereinsgründung und
                   Aufbau von <a href="http://www.tragenetzwerk.de"
-                    target="_blank" rel="noopener noreferrer">Tragenetzwerk</a></td>
+                    target="_blank" rel="noopener noreferrer" class="">Tragenetzwerk</a></td>
               </tr>
               <tr>
                 <!-- <th scope="row">3</th> -->
@@ -166,9 +169,11 @@
           </table>
         </section>
       </div>
-      <footer class="small mt-5">&copy; 2019 Vanessa Markwardt</footer>
+      <footer class="small mt-5">&copy; 2019 Vanessa Markwardt
+        <p id="test">Ein Test</p>
+      </footer>
     </main>
   </body>
 </html>
 
-<!-- todo xing bild, mehreBilder für mediaQueries, Bildunterschriften in den Teasern -->
+<!-- todo mehreBilder für mediaQueries, zitat reparieren mit FlexBox machbar?, Farben -->
