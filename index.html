@@ -11,51 +11,78 @@
   </head>
   <body>
 
+    <!-- Todo Header Flexen -->
 
     <main class="container p-3">
       <!-- flexen und eins an den Anfang und die anderen ans ende? -->
-      <header class="mb-5">
-        <h1 class="h3 text-monospace row col-sm-3">Vanessa Markwardt</h1>
-        <nav class="row mb-3">
+      <header class="row mb-5 d-flex flex-wrap">
+        <h1 class="h3 text-monospace align-self-start p-2 text-center">Vanessa Markwardt</h1>
+        <nav class=" mb-3 align-self-end">
           <a href="#contact" class="btn btn-secondary text-uppercase m-2">Kontakt</a>
           <a href="#bio" class="btn btn-secondary text-uppercase m-2">Biographie</a>
         </nav>
       </header>
       <section class="row">
 
-        <div class="portrait col-sm-4">
-          <img src="" alt="Portrait-Foto">
+        <div class="portrait col-sm-12 col-md-4 jumbotron-fluid">
+          <img src="Vanessa.jpg" alt="Portrait-Foto" class="img-fluid rounded
+            img-thumbnail">
+          <!-- todo styling bildunterschrift -->
           <p>Vanessa Markwardt</p>
         </div>
 
-        <div class="skills col">
-          <h2>Übersicht</h2>
-          <p> Dies und das</p>
-
-          <h2>Erfahrung</h2>
-          <p class="btn btn-block">jenes und so</p>
+        <!-- todo styling badges -->
+        <div class="skills col mb-5">
+          <h2>Webdevelopment Front End</h2>
+          <span class="badge badge-light">Html</span>
+          <span class="badge badge-light">CSS</span>
+          <span class="badge badge-light">JavaScript</span>
+          <span class="badge badge-light">Bootstrap</span>
+          <h2>andere Erfahrung</h2>
+          <span class="badge badge-light">MS Access</span>
+          <span class="badge badge-light">SQL</span>
+          <span class="badge badge-light">Navision</span>
         </div>
       </section>
-      <section class="row d-flex flex-wrap" id="contact">
-        <p>mobil:</p>
-        <p>0151 ..</p>
-        <p>email:</p>
-        <p>vmarkwd..</p>
+
+      <section class="row d-flex justify-content-between flex-wrap jumbotron text-monospace mb-5"
+        id="contact">
+        <p class="p-2 mr-1">mobil:</p>
+        <p class="p-2 mr-3">0151 68..</p>
+        <p class="p-2 mr-1">email:</p>
+        <p class="p-2 mr-1">vmarkw....@web.de</p>
       </section>
+
+      <!-- todo bilder und Links anpassen , Bilder runterladen und einbinden-->
       <section class="row d-flex flex-wrap justify-content-between" id="links">
-        <a href="https://github.com/vmarkwardt"><img src="" alt="">GitHub</a>
-        <a href="https://codepen.io/dashboard/"><img src="" alt="">CodePen</a>
-        <a href="https://www.xing.com/profile/Vanessa_Markwardt"><img src=""
-            alt="">Xing</a>
+        <div class="teaser col-sm-12 col-md-4">
+          <a href="https://github.com/vmarkwardt" class=""><img
+              class="rounded img-thumbnail"
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              alt="">mein GitHub</a>
+        </div>
+        <div class="teaser col-sm-12 col-md-4">
+          <a href="https://codepen.io/dashboard/"><img class="rounded
+              img-thumbnail"
+              src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png"
+              alt="">mein CodePen</a>
+        </div>
+        <div class="teaser col-sm-12 col-md-4">
+          <a href="https://www.xing.com/profile/Vanessa_Markwardt"><img
+              class="rounded img-thumbnail"
+              src="https://dev.xing.com/assets/xws/dev/logo_rules/XNG_Sharebutton_v01-7d06f36109c803c7a79f5a5c597f1fb8c8ff4d310d74ee8f6b31a56b6d6c3eea.png"
+              alt="">mein Xing-Profil</a>
+        </div>
       </section>
       <div class="row d-flex flex-column justify-content-between"
-        id="details">
+        id="bio">
         <section class="" id="about me">
           <h2 class="h2">über mich</h2>
           <p>Ich bin</p>
           <p>Ich bin</p>
         </section>
 
+        <!-- todo lebenslauf in tabelle? -->
         <section class="d-flex" id="cv">
 
         </section>
