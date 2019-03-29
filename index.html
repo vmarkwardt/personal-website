@@ -11,7 +11,6 @@
   </head>
   <body>
 
-    <!-- Todo Header Flexen -->
 
     <main class="container p-3">
       <!-- flexen und eins an den Anfang und die anderen ans ende align-self-end geht nicht und auch nicht space-between? -->
@@ -25,17 +24,15 @@
           <a href="#bio" class="btn btn-secondary text-uppercase m-2">Biographie</a>
         </nav>
       </header>
-      <section class="row">
 
+      <section id="stage" class="row m-md-1">
         <div class="portrait col-sm-12 col-md-4 jumbotron-fluid">
           <img src="img/Vanessa.jpg" alt="Portrait-Foto" class="img-fluid
             rounded
             img-thumbnail">
-          <!-- todo styling bildunterschrift -->
-          <p>Vanessa Markwardt</p>
+          <p class="text-black-50 d-block text-center">Vanessa Markwardt</p>
         </div>
 
-        <!-- todo styling badges und evt. im md flex just end fuer unten -->
         <div class="skills col mb-5">
           <div class="mb-4">
             <h2>Webdevelopment Front End</h2>
@@ -54,7 +51,7 @@
       </section>
 
       <section class="row jumbotron
-        text-monospace mb-5"
+        text-monospace m-1 mb-5"
         id="contact">
         <!-- <section class="row d-flex justify-content-between flex-wrap jumbotron
         text-monospace mb-5"
@@ -66,7 +63,7 @@
       </section>
 
       <!-- todo Bild=link reaprieren -->
-      <section class="row d-flex flex-wrap justify-content-between mb-5"
+      <section class="row d-flex flex-wrap justify-content-between m-1 mb-5"
         id="links">
         <div class="teaser col-sm-12 col-md-4 img-thumbnail">
           <a href="https://github.com/vmarkwardt" class=""><img
@@ -91,9 +88,11 @@
         </div>
       </section>
 
-      <div class="row d-flex flex-sm-column flex-md-row justify-content-between"
+      <div class="row d-flex flex-sm-column flex-md-row justify-content-between
+        m-1"
         id="bio">
-        <section class="mb-5 d-flex" id="about me">
+        <section class="mb-5 d-flex flex-sm-column flex-md-row flex-wrap"
+          id="about me">
 
           <div>
             <h2 class="h2">über mich</h2>
@@ -101,16 +100,17 @@
               der
               Schulzeit. Mit Freude erarbeite ich im Team Konzepte und Lösungen,
               um diese dann auch umzusetzen und damit Prozesse zu unterstützen.</p>
+            <aside class="align-self-center m-3 text-secondary bg-light round
+              p-2 ">
+              <p lang="de">"Da kann man 'was draus machen."</p>
+              <cite class="blockquote-footer">Lieblingsspruch</cite>
+            </aside>
             <p>Mein weiteres Engagement gilt hauptsächlich meiner Familie, indem
               ich mich in der Reformschule meiner Kinder als doppelte
               Elternvertreterin, im Elternrat, in der AG Kommunikation, in der
               AG
               Lernreflexion und als 1. Vorsitzende im Schulverein einsetze.</p>
           </div>
-          <aside class="align-self-end m-3">
-            <p lang="de">"Da kann man 'was draus machen."</p>
-            <cite class="blockquote-footer">mein Lieblingsspruch</cite>
-          </aside>
         </section>
 
         <section class="d-flex flex-column text-monospace" id="cv">
