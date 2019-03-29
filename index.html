@@ -14,10 +14,13 @@
     <!-- Todo Header Flexen -->
 
     <main class="container p-3">
-      <!-- flexen und eins an den Anfang und die anderen ans ende? -->
-      <header class="row mb-5 d-flex flex-wrap">
-        <h1 class="h3 text-monospace align-self-start p-2 text-center">Vanessa Markwardt</h1>
-        <nav class=" mb-3 align-self-end">
+      <!-- flexen und eins an den Anfang und die anderen ans ende align-self-end geht nicht und auch nicht space-between? -->
+      <!-- offset col -->
+      <header class="row mb-5 d-flex flex-sm-column flex-md-row
+        col12 justify-content-md-between">
+        <h1 class="h3 text-monospace align-self-start p-2 text-center">Vanessa
+          Markwardt</h1>
+        <nav class="mb-3 align-self-end">
           <a href="#contact" class="btn btn-secondary text-uppercase m-2">Kontakt</a>
           <a href="#bio" class="btn btn-secondary text-uppercase m-2">Biographie</a>
         </nav>
@@ -25,69 +28,145 @@
       <section class="row">
 
         <div class="portrait col-sm-12 col-md-4 jumbotron-fluid">
-          <img src="Vanessa.jpg" alt="Portrait-Foto" class="img-fluid rounded
+          <img src="img/Vanessa.jpg" alt="Portrait-Foto" class="img-fluid
+            rounded
             img-thumbnail">
           <!-- todo styling bildunterschrift -->
           <p>Vanessa Markwardt</p>
         </div>
 
-        <!-- todo styling badges -->
+        <!-- todo styling badges und evt. im md flex just end fuer unten -->
         <div class="skills col mb-5">
-          <h2>Webdevelopment Front End</h2>
-          <span class="badge badge-light">Html</span>
-          <span class="badge badge-light">CSS</span>
-          <span class="badge badge-light">JavaScript</span>
-          <span class="badge badge-light">Bootstrap</span>
-          <h2>andere Erfahrung</h2>
-          <span class="badge badge-light">MS Access</span>
-          <span class="badge badge-light">SQL</span>
-          <span class="badge badge-light">Navision</span>
+          <div class="mb-4">
+            <h2>Webdevelopment Front End</h2>
+            <span class="badge badge-light shadow-sm">Html</span>
+            <span class="badge badge-light shadow-sm">CSS</span>
+            <span class="badge badge-light shadow-sm">JavaScript</span>
+            <span class="badge badge-light shadow-sm">Bootstrap</span>
+          </div>
+          <div class="mb-2">
+            <h2>andere Erfahrung</h2>
+            <span class="badge badge-light shadow-sm">MS Access</span>
+            <span class="badge badge-light shadow-sm">SQL</span>
+            <span class="badge badge-light shadow-sm">Navision</span>
+          </div>
         </div>
       </section>
 
-      <section class="row d-flex justify-content-between flex-wrap jumbotron text-monospace mb-5"
+      <section class="row jumbotron
+        text-monospace mb-5"
         id="contact">
-        <p class="p-2 mr-1">mobil:</p>
-        <p class="p-2 mr-3">0151 68..</p>
-        <p class="p-2 mr-1">email:</p>
-        <p class="p-2 mr-1">vmarkw....@web.de</p>
+        <!-- <section class="row d-flex justify-content-between flex-wrap jumbotron
+        text-monospace mb-5"
+        id="contact"> -->
+        <p class="p-1 col-sm-12 col-md-1">mobil:</p>
+        <p class="p-1 col-sm-12 col-md-5">0151 68..</p>
+        <p class="p-1 col-sm-12 col-md-1">email:</p>
+        <p class="p-1 col-sm-12 col-md-5">vmarkw....@web.de</p>
       </section>
 
-      <!-- todo bilder und Links anpassen , Bilder runterladen und einbinden-->
-      <section class="row d-flex flex-wrap justify-content-between" id="links">
-        <div class="teaser col-sm-12 col-md-4">
+      <!-- todo Bild=link reaprieren -->
+      <section class="row d-flex flex-wrap justify-content-between mb-5"
+        id="links">
+        <div class="teaser col-sm-12 col-md-4 img-thumbnail">
           <a href="https://github.com/vmarkwardt" class=""><img
               class="rounded img-thumbnail"
               src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-              alt="">mein GitHub</a>
+              alt=""></a>
+          <span class="stretched-link text-black-50 d-block text-center">GitHub</span>
         </div>
-        <div class="teaser col-sm-12 col-md-4">
+        <div class="teaser col-sm-12 col-md-4 img-thumbnail">
           <a href="https://codepen.io/dashboard/"><img class="rounded
-              img-thumbnail"
+              img-thumbnail stretched-link"
               src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png"
-              alt="">mein CodePen</a>
+              alt=""></a>
+          <span class="stretched-link text-black-50 d-block text-center">CodePen</span>
         </div>
-        <div class="teaser col-sm-12 col-md-4">
+        <div class="teaser col-sm-12 col-md-4 img-thumbnail">
           <a href="https://www.xing.com/profile/Vanessa_Markwardt"><img
-              class="rounded img-thumbnail"
-              src="https://dev.xing.com/assets/xws/dev/logo_rules/XNG_Sharebutton_v01-7d06f36109c803c7a79f5a5c597f1fb8c8ff4d310d74ee8f6b31a56b6d6c3eea.png"
-              alt="">mein Xing-Profil</a>
+              class="rounded img-thumbnail stretched-link"
+              src="/img/Xing_logo_rund.svg.png"
+              alt=""></a>
+          <span class="stretched-link text-black-50 d-block text-center">XING</span>
         </div>
       </section>
-      <div class="row d-flex flex-column justify-content-between"
+
+      <div class="row d-flex flex-sm-column flex-md-row justify-content-between"
         id="bio">
-        <section class="" id="about me">
-          <h2 class="h2">über mich</h2>
-          <p>Ich bin</p>
-          <p>Ich bin</p>
+        <section class="mb-5 d-flex" id="about me">
+
+          <div>
+            <h2 class="h2">über mich</h2>
+            <p>Für Computer und Programmierung begeistere ich mich schon seit
+              der
+              Schulzeit. Mit Freude erarbeite ich im Team Konzepte und Lösungen,
+              um diese dann auch umzusetzen und damit Prozesse zu unterstützen.</p>
+            <p>Mein weiteres Engagement gilt hauptsächlich meiner Familie, indem
+              ich mich in der Reformschule meiner Kinder als doppelte
+              Elternvertreterin, im Elternrat, in der AG Kommunikation, in der
+              AG
+              Lernreflexion und als 1. Vorsitzende im Schulverein einsetze.</p>
+          </div>
+          <aside class="align-self-end m-3">
+            <p lang="de">"Da kann man 'was draus machen."</p>
+            <cite class="blockquote-footer">mein Lieblingsspruch</cite>
+          </aside>
         </section>
 
-        <!-- todo lebenslauf in tabelle? -->
-        <section class="d-flex" id="cv">
-
+        <section class="d-flex flex-column text-monospace" id="cv">
+          <h3>Lebenslauf</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Zeitraum</th>
+                <th scope="col">Ereignis/Phase</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>1998</td>
+                <td>Abitur</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">2</th> -->
+                <td>1999</td>
+                <td>Ausbildung: kaufmännische Assistenz / Schwerpunkt IT</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">3</th> -->
+                <td>1999</td>
+                <td>Informatik-Studium Uni Hamburg</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">3</th> -->
+                <td>2001-2007</td>
+                <td>MS Access DB für Germanischer LLoyd</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">3</th> -->
+                <td>2007-2008</td>
+                <td>NaVision und MS Access für Conion</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">3</th> -->
+                <td>2008 - 2018</td>
+                <td>2 Kinder / Still- und Trageberatung, Vereinsgründung und
+                  Aufbau von <a href="http://www.tragenetzwerk.de"
+                    target="_blank" rel="noopener noreferrer">Tragenetzwerk</a></td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">3</th> -->
+                <td>2018 - 2019</td>
+                <td>MS Access DB für Zebau GmbH</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
-      <footer class="small">&copy; 2019 Vanessa Markwardt</footer>
+      <footer class="small mt-5">&copy; 2019 Vanessa Markwardt</footer>
     </main>
   </body>
 </html>
+
+<!-- todo xing bild, mehreBilder für mediaQueries, Bildunterschriften in den Teasern -->
