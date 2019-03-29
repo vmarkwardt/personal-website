@@ -13,58 +13,54 @@
 
 
     <main class="container p-3">
-
-
-      <!-- <button class="btn-danger">test -->
-
-      <header>
-        <nav>
-          <a href="#contact" class="btn btn-secondary">Kontakt</a>
-          <a href="#bio" class="btn btn-secondary">Biographie</a>
+      <!-- flexen und eins an den Anfang und die anderen ans ende? -->
+      <header class="mb-5">
+        <h1 class="h3 text-monospace row col-sm-3">Vanessa Markwardt</h1>
+        <nav class="row mb-3">
+          <a href="#contact" class="btn btn-secondary text-uppercase m-2">Kontakt</a>
+          <a href="#bio" class="btn btn-secondary text-uppercase m-2">Biographie</a>
         </nav>
       </header>
+      <section class="row">
 
-
-
-      <h3 class="mb-4">Resize your screen</h3>
-
-      <!--  Different behavior on different screen sizes  -->
-      <div class="row mb-5">
-        <div class="col col-sm-3 col-md-6">
-          <section class="bg-info p-3"></section>
+        <div class="portrait col-sm-4">
+          <img src="" alt="Portrait-Foto">
+          <p>Vanessa Markwardt</p>
         </div>
-        <div class="col col-sm-9 offset-md-3 col-md-3">
-          <section class="bg-info p-3"></section>
-        </div>
-      </div>
 
-      <!--  Show and hide things responsively -->
-      <div class="row mb-5">
-        <div class="col">
-          <section class="bg-info p-3">I stay</section>
-        </div>
-        <div class="col">
-          <section class="bg-warning d-md-none p-3">small to medium</section>
-          <section class="bg-success d-none d-md-block p-3">big screens</section>
-        </div>
-      </div>
+        <div class="skills col">
+          <h2>Übersicht</h2>
+          <p> Dies und das</p>
 
-      <!--  
-  Use just margin-right, if you want your content
-  not to grow on resize: -->
-      <div class="mb-5">
-        <button class="mr-4 btn btn-danger">I stay the same</button>
-        <button class="mr-4 btn btn-success">No worry</button>
-        <button class="mr-4 btn btn-success">Resize to check</button>
-      </div>
+          <h2>Erfahrung</h2>
+          <p class="btn btn-block">jenes und so</p>
+        </div>
+      </section>
+      <section class="row d-flex flex-wrap" id="contact">
+        <p>mobil:</p>
+        <p>0151 ..</p>
+        <p>email:</p>
+        <p>vmarkwd..</p>
+      </section>
+      <section class="row d-flex flex-wrap justify-content-between" id="links">
+        <a href="https://github.com/vmarkwardt"><img src="" alt="">GitHub</a>
+        <a href="https://codepen.io/dashboard/"><img src="" alt="">CodePen</a>
+        <a href="https://www.xing.com/profile/Vanessa_Markwardt"><img src=""
+            alt="">Xing</a>
+      </section>
+      <div class="row d-flex flex-column justify-content-between"
+        id="details">
+        <section class="" id="about me">
+          <h2 class="h2">über mich</h2>
+          <p>Ich bin</p>
+          <p>Ich bin</p>
+        </section>
 
-      <!--  Using d-flex -->
-      <div class="d-flex justify-content-between">
-        <button class="btn btn-primary">Foo</button>
-        <button class="btn btn-primary">Bar</button>
-        <button class="btn btn-primary">Baz</button>
-        <button class="btn btn-primary">Foobar</button>
+        <section class="d-flex" id="cv">
+
+        </section>
       </div>
+      <footer class="small">&copy; 2019 Vanessa Markwardt</footer>
     </main>
   </body>
 </html>
