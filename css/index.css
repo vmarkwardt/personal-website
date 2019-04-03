@@ -1,0 +1,17 @@
+* {
+  block-size: border-box;
+}
+
+body {
+  width: 100vw;
+  padding: 2rem;
+}
+
+/* mobile view */
+
+@media (min-width:400px) {
+  main {
+    /* display: grid; */
+    /* grid-template-columns:  */
+  }
+}
