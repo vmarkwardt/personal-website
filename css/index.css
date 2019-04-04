@@ -1,0 +1,19 @@
+* {
+  block-size: border-box;
+}
+
+body {
+  width: 100vw;
+  padding: 2rem;
+}
+
+/* mobile view */
+
+@media (min-width:400px) {
+  main {
+    display: grid;
+    /* todo grid width and height? */
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
+  }
+}
