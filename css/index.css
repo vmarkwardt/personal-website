@@ -11,7 +11,9 @@ body {
 
 @media (min-width:400px) {
   main {
-    /* display: grid; */
-    /* grid-template-columns:  */
+    display: grid;
+    /* todo grid width and height? */
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
   }
 }
